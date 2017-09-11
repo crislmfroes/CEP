@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <title>Busca CEP</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="vendor/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <form action="" method="POST" role="form">
+        <legend>Buscar CEP</legend>
+
+        <div class="form-group">
+            <label for="">CEP</label>
+            <input type="number" class="form-control" id="cep" placeholder="Input field">
+        </div>
+
+        <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+    <script src="vendor/jquery/dist/jquery.min.js"></script>
+    <script src="vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <%- yield %>
+
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th>Atributo</th>
+                <th>Valor</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Teste</td>
+                <td>1</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script src="vendor/handlebars/handlebars.min.js"></script>
+    <script id="templateRow" type="text/x-handlebars-template">
+        <tr>
+            <td>{{atributo}}</td>
+            <td>{{valor}}</td>
+        </tr>
+    </script>
+    <script src="js/index.js"></script>
+
+</body>
+
+</html>

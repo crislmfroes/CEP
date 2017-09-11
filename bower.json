@@ -1,0 +1,23 @@
+{
+  "name": "01-hello-ajax",
+  "homepage": "https://github.com/profmarciotorres/dbo-2017-2",
+  "authors": [
+    "marciojrtorres <marciojrtorres@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "public/vendor",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "bootstrap": "^3.3.7",
+    "handlebars": "^4.0.10"
+  }
+}

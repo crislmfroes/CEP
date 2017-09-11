@@ -1,0 +1,31 @@
+{
+  "name": "cep",
+  "version": "0.0.1",
+  "description": "Olá Mundo!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Cris Lima Froes",
+  "license": "ISC",
+  "devDependencies": {
+    "bower": "^1.8.0",
+    "eslint": "^4.5.0",
+    "eslint-config-google": "^0.9.1",
+    "harp": "^0.24.0"
+  },
+  "dependencies": {
+    "bower": "^1.8.0",
+    "eslint": "^4.5.0",
+    "eslint-config-google": "^0.9.1",
+    "harp": "^0.24.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/crislmfroes/CEP.git"
+  },
+  "bugs": {
+    "url": "https://github.com/crislmfroes/CEP/issues"
+  },
+  "homepage": "https://github.com/crislmfroes/CEP#readme"
+}
