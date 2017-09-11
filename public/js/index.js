@@ -1,8 +1,8 @@
 const form = document.querySelector('form');
-const templateSource = document.querySelector('#templateRow');
-const table = document.querySelector('table');
+const container = document.querySelector('div.container');
+const templateSource = document.querySelector('#template');
 const source = templateSource.innerHTML;
-const templateRow = Handlebars.compile(source);
+const template = Handlebars.compile(source);
 form.addEventListener('submit', function(event) {
     busca(form.cep.value);
 });
@@ -18,16 +18,12 @@ function busca(cep) {
     console.log(url);
     ajax(url, function(e) {
         let response = JSON.parse(e.target.response);
-        for (let attribute in response) {
-            if (response.hasOwnProperty(attribute)) {
-                console.log(attribute);
-                let rowElements = {
-                    'atributo': attribute,
-                    'valor': response[attribute],
-                };
-                table.innerHTML += templateRow(rowElements);
-            }
-        }
+        let printable = {
+            'cep': response.cep,
+            'localidade': response.localidade,
+            'logradouro': response.logradouro,
+        };
+        container.innerHTML += template(printable);
     });
     event.preventDefault();
 }

@@ -3,27 +3,29 @@
 
 <body>
 
-    <table class="table table-hover">
-        <thead>
-            <tr>
-                <th>Atributo</th>
-                <th>Valor</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Teste</td>
-                <td>1</td>
-            </tr>
-        </tbody>
-    </table>
+    <div class="container">
+        
+    </div>
 
     <script src="vendor/handlebars/handlebars.min.js"></script>
-    <script id="templateRow" type="text/x-handlebars-template">
-        <tr>
-            <td>{{atributo}}</td>
-            <td>{{valor}}</td>
-        </tr>
+    <script id="template" type="text/x-handlebars-template">
+        <table class="table table-hover">
+            <tbody>
+                <tr>
+                    <td>CEP</td>
+                    <td>{{cep}}</td>
+                </tr>
+                <tr>
+                    <td>Logradouro</td>
+                    <td>{{logradouro}}</td>
+                </tr>
+                <tr>
+                    <td>Localidade</td>
+                    <td>{{localidade}}</td>
+                </tr>
+            </tbody>
+        </table>
+        
     </script>
     <script src="js/index.js"></script>
 
