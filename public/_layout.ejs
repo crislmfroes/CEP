@@ -9,20 +9,29 @@
 </head>
 
 <body>
-    <form action="" method="POST" role="form">
-        <legend>Buscar CEP</legend>
-
-        <div class="form-group">
-            <label for="">CEP</label>
-            <input type="number" class="form-control" id="cep" placeholder="Input field">
-        </div>
-
-        <button type="submit" class="btn btn-primary">Enviar</button>
-    </form>
+    <div class="mensagem"></div>
+    <div class="container">
+        <form action="" method="POST" role="form">
+            <legend>Buscar CEP</legend>
+    
+            
+            <div class="input-group">
+                <input class="form-control" type="text" value="00000000" "form-control" id="cep" aria-label="Digite seu CEP">
+                <div class="input-group-btn">
+                    <button type="submit" class="btn btn-default" aria-label="Pesquisar">
+                        <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                    </button>
+                    <button id="remove" type="button" class="btn btn-default" aria-label="Limpar CEP">
+                        <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                    </button>
+                </div>
+                </div>
+    
+        </form>
+        <%- yield %>
+    </div>
     <script src="vendor/jquery/dist/jquery.min.js"></script>
     <script src="vendor/bootstrap/dist/js/bootstrap.min.js"></script>
-
-    <%- yield %>
 
 </body>
 
